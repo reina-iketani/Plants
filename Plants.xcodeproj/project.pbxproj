@@ -13,9 +13,16 @@
 		3B42AB4B2A419F1E00273E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B42AB492A419F1E00273E2C /* Main.storyboard */; };
 		3B42AB4D2A419F1F00273E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B42AB4C2A419F1F00273E2C /* Assets.xcassets */; };
 		3B42AB502A419F1F00273E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B42AB4E2A419F1F00273E2C /* LaunchScreen.storyboard */; };
+		3B42AB582A419F5B00273E2C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB572A419F5B00273E2C /* HomeViewController.swift */; };
+		3B42AB5A2A419F6C00273E2C /* MyplantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB592A419F6C00273E2C /* MyplantsViewController.swift */; };
+		3B42AB5C2A419F8100273E2C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB5B2A419F8100273E2C /* SearchViewController.swift */; };
+		3B42AB5E2A41A26600273E2C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB5D2A41A26600273E2C /* TabBarViewController.swift */; };
+		EB442866D2457C2249CB7BFE /* Pods_Plants.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A8B6100C14492D4E72BE5D /* Pods_Plants.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		089A0F488D20F9232FCBCE70 /* Pods-Plants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plants.release.xcconfig"; path = "Target Support Files/Pods-Plants/Pods-Plants.release.xcconfig"; sourceTree = "<group>"; };
+		29A8B6100C14492D4E72BE5D /* Pods_Plants.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B42AB402A419F1E00273E2C /* Plants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B42AB432A419F1E00273E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B42AB452A419F1E00273E2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		3B42AB4C2A419F1F00273E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B42AB4F2A419F1F00273E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B42AB512A419F1F00273E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B42AB572A419F5B00273E2C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3B42AB592A419F6C00273E2C /* MyplantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplantsViewController.swift; sourceTree = "<group>"; };
+		3B42AB5B2A419F8100273E2C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3B42AB5D2A41A26600273E2C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4865FDFE65F803ADF962C547 /* Pods-Plants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plants.debug.xcconfig"; path = "Target Support Files/Pods-Plants/Pods-Plants.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB442866D2457C2249CB7BFE /* Pods_Plants.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				3B42AB422A419F1E00273E2C /* Plants */,
 				3B42AB412A419F1E00273E2C /* Products */,
+				B2E1C86E17FF7C35700A38AE /* Pods */,
+				D00D31C54DECCFAB69400343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +74,34 @@
 				3B42AB432A419F1E00273E2C /* AppDelegate.swift */,
 				3B42AB452A419F1E00273E2C /* SceneDelegate.swift */,
 				3B42AB472A419F1E00273E2C /* ViewController.swift */,
+				3B42AB572A419F5B00273E2C /* HomeViewController.swift */,
+				3B42AB592A419F6C00273E2C /* MyplantsViewController.swift */,
+				3B42AB5B2A419F8100273E2C /* SearchViewController.swift */,
+				3B42AB5D2A41A26600273E2C /* TabBarViewController.swift */,
 				3B42AB492A419F1E00273E2C /* Main.storyboard */,
 				3B42AB4C2A419F1F00273E2C /* Assets.xcassets */,
 				3B42AB4E2A419F1F00273E2C /* LaunchScreen.storyboard */,
 				3B42AB512A419F1F00273E2C /* Info.plist */,
 			);
 			path = Plants;
+			sourceTree = "<group>";
+		};
+		B2E1C86E17FF7C35700A38AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4865FDFE65F803ADF962C547 /* Pods-Plants.debug.xcconfig */,
+				089A0F488D20F9232FCBCE70 /* Pods-Plants.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D00D31C54DECCFAB69400343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29A8B6100C14492D4E72BE5D /* Pods_Plants.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B42AB542A419F1F00273E2C /* Build configuration list for PBXNativeTarget "Plants" */;
 			buildPhases = (
+				6D1E92CAE1606FE4FEC2E8F3 /* [CP] Check Pods Manifest.lock */,
 				3B42AB3C2A419F1E00273E2C /* Sources */,
 				3B42AB3D2A419F1E00273E2C /* Frameworks */,
 				3B42AB3E2A419F1E00273E2C /* Resources */,
+				CE8C91D59DF4717EA5718E4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +172,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6D1E92CAE1606FE4FEC2E8F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plants-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8C91D59DF4717EA5718E4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plants/Pods-Plants-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plants/Pods-Plants-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Plants/Pods-Plants-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B42AB3C2A419F1E00273E2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B42AB5C2A419F8100273E2C /* SearchViewController.swift in Sources */,
+				3B42AB5A2A419F6C00273E2C /* MyplantsViewController.swift in Sources */,
 				3B42AB482A419F1E00273E2C /* ViewController.swift in Sources */,
 				3B42AB442A419F1E00273E2C /* AppDelegate.swift in Sources */,
+				3B42AB5E2A41A26600273E2C /* TabBarViewController.swift in Sources */,
 				3B42AB462A419F1E00273E2C /* SceneDelegate.swift in Sources */,
+				3B42AB582A419F5B00273E2C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +367,7 @@
 		};
 		3B42AB552A419F1F00273E2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4865FDFE65F803ADF962C547 /* Pods-Plants.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,8 +379,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +387,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.reina.iketani.Plants;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,6 +398,7 @@
 		};
 		3B42AB562A419F1F00273E2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 089A0F488D20F9232FCBCE70 /* Pods-Plants.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +410,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +418,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.reina.iketani.Plants;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
