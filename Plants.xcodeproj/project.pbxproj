@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B38ECC02A451E2E00BD3680 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ECBF2A451E2E00BD3680 /* DetailViewController.swift */; };
+		3B38ECC22A4573BC00BD3680 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ECC12A4573BC00BD3680 /* DiaryViewController.swift */; };
+		3B38ECC52A458AEA00BD3680 /* TaskHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ECC32A458AEA00BD3680 /* TaskHomeTableViewCell.swift */; };
+		3B38ECC62A458AEA00BD3680 /* TaskHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B38ECC42A458AEA00BD3680 /* TaskHomeTableViewCell.xib */; };
+		3B38ECC92A49846B00BD3680 /* AddDiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ECC72A49846B00BD3680 /* AddDiaryTableViewCell.swift */; };
+		3B38ECCA2A49846B00BD3680 /* AddDiaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B38ECC82A49846B00BD3680 /* AddDiaryTableViewCell.xib */; };
+		3B38ECD02A4C309500BD3680 /* Plants.realm in Resources */ = {isa = PBXBuildFile; fileRef = 3B38ECCF2A4C309500BD3680 /* Plants.realm */; };
+		3B38ECD22A4EB98A00BD3680 /* NodataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38ECD12A4EB98A00BD3680 /* NodataViewController.swift */; };
 		3B42AB442A419F1E00273E2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB432A419F1E00273E2C /* AppDelegate.swift */; };
 		3B42AB462A419F1E00273E2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB452A419F1E00273E2C /* SceneDelegate.swift */; };
 		3B42AB482A419F1E00273E2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB472A419F1E00273E2C /* ViewController.swift */; };
@@ -17,12 +25,25 @@
 		3B42AB5A2A419F6C00273E2C /* MyplantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB592A419F6C00273E2C /* MyplantsViewController.swift */; };
 		3B42AB5C2A419F8100273E2C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB5B2A419F8100273E2C /* SearchViewController.swift */; };
 		3B42AB5E2A41A26600273E2C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB5D2A41A26600273E2C /* TabBarViewController.swift */; };
+		3B42AB602A428C2100273E2C /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB5F2A428C2100273E2C /* SearchResultViewController.swift */; };
+		3B42AB622A42956800273E2C /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB612A42956800273E2C /* Information.swift */; };
+		3B42AB642A42BDA000273E2C /* AddPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB632A42BDA000273E2C /* AddPlantsViewController.swift */; };
+		3B42AB6B2A43DC0500273E2C /* MyplantsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42AB692A43DC0500273E2C /* MyplantsTableViewCell.swift */; };
+		3B42AB6C2A43DC0500273E2C /* MyplantsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B42AB6A2A43DC0500273E2C /* MyplantsTableViewCell.xib */; };
 		EB442866D2457C2249CB7BFE /* Pods_Plants.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A8B6100C14492D4E72BE5D /* Pods_Plants.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		089A0F488D20F9232FCBCE70 /* Pods-Plants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plants.release.xcconfig"; path = "Target Support Files/Pods-Plants/Pods-Plants.release.xcconfig"; sourceTree = "<group>"; };
 		29A8B6100C14492D4E72BE5D /* Pods_Plants.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B38ECBF2A451E2E00BD3680 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3B38ECC12A4573BC00BD3680 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		3B38ECC32A458AEA00BD3680 /* TaskHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHomeTableViewCell.swift; sourceTree = "<group>"; };
+		3B38ECC42A458AEA00BD3680 /* TaskHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskHomeTableViewCell.xib; sourceTree = "<group>"; };
+		3B38ECC72A49846B00BD3680 /* AddDiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiaryTableViewCell.swift; sourceTree = "<group>"; };
+		3B38ECC82A49846B00BD3680 /* AddDiaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddDiaryTableViewCell.xib; sourceTree = "<group>"; };
+		3B38ECCF2A4C309500BD3680 /* Plants.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Plants.realm; sourceTree = "<group>"; };
+		3B38ECD12A4EB98A00BD3680 /* NodataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodataViewController.swift; sourceTree = "<group>"; };
 		3B42AB402A419F1E00273E2C /* Plants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B42AB432A419F1E00273E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B42AB452A419F1E00273E2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +56,11 @@
 		3B42AB592A419F6C00273E2C /* MyplantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplantsViewController.swift; sourceTree = "<group>"; };
 		3B42AB5B2A419F8100273E2C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3B42AB5D2A41A26600273E2C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3B42AB5F2A428C2100273E2C /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		3B42AB612A42956800273E2C /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		3B42AB632A42BDA000273E2C /* AddPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantsViewController.swift; sourceTree = "<group>"; };
+		3B42AB692A43DC0500273E2C /* MyplantsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplantsTableViewCell.swift; sourceTree = "<group>"; };
+		3B42AB6A2A43DC0500273E2C /* MyplantsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyplantsTableViewCell.xib; sourceTree = "<group>"; };
 		4865FDFE65F803ADF962C547 /* Pods-Plants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plants.debug.xcconfig"; path = "Target Support Files/Pods-Plants/Pods-Plants.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,11 +101,24 @@
 				3B42AB452A419F1E00273E2C /* SceneDelegate.swift */,
 				3B42AB472A419F1E00273E2C /* ViewController.swift */,
 				3B42AB572A419F5B00273E2C /* HomeViewController.swift */,
+				3B38ECC32A458AEA00BD3680 /* TaskHomeTableViewCell.swift */,
+				3B38ECC42A458AEA00BD3680 /* TaskHomeTableViewCell.xib */,
 				3B42AB592A419F6C00273E2C /* MyplantsViewController.swift */,
+				3B38ECD12A4EB98A00BD3680 /* NodataViewController.swift */,
+				3B42AB692A43DC0500273E2C /* MyplantsTableViewCell.swift */,
+				3B42AB6A2A43DC0500273E2C /* MyplantsTableViewCell.xib */,
+				3B38ECBF2A451E2E00BD3680 /* DetailViewController.swift */,
+				3B38ECC12A4573BC00BD3680 /* DiaryViewController.swift */,
+				3B38ECC72A49846B00BD3680 /* AddDiaryTableViewCell.swift */,
+				3B38ECC82A49846B00BD3680 /* AddDiaryTableViewCell.xib */,
+				3B42AB632A42BDA000273E2C /* AddPlantsViewController.swift */,
 				3B42AB5B2A419F8100273E2C /* SearchViewController.swift */,
 				3B42AB5D2A41A26600273E2C /* TabBarViewController.swift */,
+				3B42AB5F2A428C2100273E2C /* SearchResultViewController.swift */,
 				3B42AB492A419F1E00273E2C /* Main.storyboard */,
+				3B42AB612A42956800273E2C /* Information.swift */,
 				3B42AB4C2A419F1F00273E2C /* Assets.xcassets */,
+				3B38ECCF2A4C309500BD3680 /* Plants.realm */,
 				3B42AB4E2A419F1F00273E2C /* LaunchScreen.storyboard */,
 				3B42AB512A419F1F00273E2C /* Info.plist */,
 			);
@@ -92,7 +131,6 @@
 				4865FDFE65F803ADF962C547 /* Pods-Plants.debug.xcconfig */,
 				089A0F488D20F9232FCBCE70 /* Pods-Plants.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -165,6 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B42AB502A419F1F00273E2C /* LaunchScreen.storyboard in Resources */,
+				3B42AB6C2A43DC0500273E2C /* MyplantsTableViewCell.xib in Resources */,
+				3B38ECCA2A49846B00BD3680 /* AddDiaryTableViewCell.xib in Resources */,
+				3B38ECD02A4C309500BD3680 /* Plants.realm in Resources */,
+				3B38ECC62A458AEA00BD3680 /* TaskHomeTableViewCell.xib in Resources */,
 				3B42AB4D2A419F1F00273E2C /* Assets.xcassets in Resources */,
 				3B42AB4B2A419F1E00273E2C /* Main.storyboard in Resources */,
 			);
@@ -219,12 +261,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B42AB642A42BDA000273E2C /* AddPlantsViewController.swift in Sources */,
+				3B42AB622A42956800273E2C /* Information.swift in Sources */,
+				3B38ECC92A49846B00BD3680 /* AddDiaryTableViewCell.swift in Sources */,
 				3B42AB5C2A419F8100273E2C /* SearchViewController.swift in Sources */,
+				3B38ECC02A451E2E00BD3680 /* DetailViewController.swift in Sources */,
 				3B42AB5A2A419F6C00273E2C /* MyplantsViewController.swift in Sources */,
+				3B38ECC52A458AEA00BD3680 /* TaskHomeTableViewCell.swift in Sources */,
 				3B42AB482A419F1E00273E2C /* ViewController.swift in Sources */,
 				3B42AB442A419F1E00273E2C /* AppDelegate.swift in Sources */,
+				3B42AB6B2A43DC0500273E2C /* MyplantsTableViewCell.swift in Sources */,
 				3B42AB5E2A41A26600273E2C /* TabBarViewController.swift in Sources */,
+				3B38ECD22A4EB98A00BD3680 /* NodataViewController.swift in Sources */,
+				3B38ECC22A4573BC00BD3680 /* DiaryViewController.swift in Sources */,
 				3B42AB462A419F1E00273E2C /* SceneDelegate.swift in Sources */,
+				3B42AB602A428C2100273E2C /* SearchResultViewController.swift in Sources */,
 				3B42AB582A419F5B00273E2C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,10 +427,12 @@
 				DEVELOPMENT_TEAM = L6ZXJ7FQPU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Plants/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラの使用を許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,10 +460,12 @@
 				DEVELOPMENT_TEAM = L6ZXJ7FQPU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Plants/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラの使用を許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
