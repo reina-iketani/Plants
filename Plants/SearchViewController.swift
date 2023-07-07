@@ -21,6 +21,7 @@ class SearchViewController: UIViewController {
         textField.keyboardType = .namePhonePad
 
         // Do any additional setup after loading the view.
+        let tapGuesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dissmissKeyboard))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,6 +31,9 @@ class SearchViewController: UIViewController {
             
     }
 
+    @objc func dissmissKeyboard() {
+        view.endEditing(true)
+    }
     
 
 }

@@ -38,10 +38,12 @@ class DiaryViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
         cancelButton.layer.borderWidth = 1.0
         cancelButton.layer.borderColor =  UIColor.gray.cgColor
-        
+        let tapGuesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dissmissKeyboard))
     }
     
-    
+    @objc func dissmissKeyboard() {
+        view.endEditing(true)
+    }
     
     
     @IBAction func postButton(_ sender: UIButton) {

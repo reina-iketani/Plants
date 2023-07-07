@@ -30,7 +30,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
             notificationToken = realm.observe { [weak self] (notification, realm) in
-                print("debug")
+                
                 self?.generateTaskArray() // Realmデータが変更されたらtaskArrayを再生成
                 self?.tableView.reloadData() // tableViewを更新
                 self?.taskLvel.text = "今日のタスク：" + String(self?.taskArray.count ?? 0) + "件" // タスクの数を更新
@@ -45,7 +45,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         generateTaskArray()
         tableView.reloadData()
-        print("array",taskArray)
+        
         self.taskLvel.text = "今日のタスク：" + String(taskArray.count) + "件"
         
         
@@ -75,9 +75,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let task = taskArray[indexPath.row]
         cell.lavel.text = task
         cell.lavel.textAlignment = .left
-        
-        if task.contains("に水やりの日です。") {
-            
+        print("task",task)
+        if task.contains("に水やりの日です") {
+            print("表示")
             cell.button.isHidden = false
             cell.button.addTarget(self, action: #selector(handleButton(_:forEvent:)), for: .touchUpInside)
             createNotification(title: "タスクの通知", body: task)
@@ -108,20 +108,31 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // 配列からタップされたインデックスのデータを取り出す
         
         let task = taskArray[indexPath!.row]
-        let name = task.replacingOccurrences(of: "に水やりの日です。", with: "")
         
+        // タスクの削除処理
+        let elementToRemove = task
+        if let index = taskArray.firstIndex(of: elementToRemove) {
+            taskArray.remove(at: index)
+        }
+        //アラートから削除
+        deleteNotification(withIdentifier: task)
+            
+        //let del: set<Character> = ["に水やりの日です"]
+        let name = task.replacingOccurrences(of: "に水やりの日です", with: "")
         
+        print("name",name)
             let plants = realm.objects(Myplants.self).filter("name = %@", name)
             if let plant = plants.first {
                 
-                let center = UNUserNotificationCenter.current()
-                center.removePendingNotificationRequests(withIdentifiers: [String(task)])
+//                let center = UNUserNotificationCenter.current()
+//                center.removePendingNotificationRequests(withIdentifiers: [String(task)])
                 
                 // waterLastdateを今日の日付に更新
                 try! realm.write {
                     print("update")
                     plant.waterLastdate = Date()
-                    realm.add(plant)
+                    //realm.add(plant)
+                    realm.add(plant, update: .modified)
                 }
                 tableView.reloadData()
                 
@@ -135,6 +146,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
             
     }
+    
+    func deleteNotification(withIdentifier identifier: String) {
+        let center = UNUserNotificationCenter.current()
+        center.removePendingNotificationRequests(withIdentifiers: [identifier])
+    }
+    
+    
+    
     
     func generateTaskArray() {
         taskArray.removeAll()
@@ -161,8 +180,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     if plant.plants == information.plants {
                         if let ssWaterDate = Calendar.current.date(byAdding: .day, value: Int(information.sswater) ?? 0, to: plant.waterLastdate),
                            let currentDate = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: currentDate) {
-                            print("waterdate",ssWaterDate)
-                            print("today",currentDate)
+                            
                             if ssWaterDate <= currentDate {
                                 taskArray.append("\(plant.name)に水やりの日です")
                             }
