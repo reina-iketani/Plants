@@ -19,7 +19,7 @@ class AddDiaryTableViewCell: UITableViewCell {
     
     func setData(_ diary: Diary){
         let formatter = DateFormatter()
-        formatter.dateFormat = "M/d EEE"
+        formatter.dateFormat = "M月d日"
         let dateString:String = formatter.string(from: diary.date)
         self.dateLavel.text = dateString
         

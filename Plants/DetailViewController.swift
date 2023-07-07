@@ -36,7 +36,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.textField.text = myplants.name
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "M/d EEE"
+        formatter.dateFormat = "M月d日"
         let dateString:String = formatter.string(from: myplants.waterLastdate)
         self.lavel.text = "最終水やり日:" + dateString
         
@@ -60,6 +60,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
         let tapGuesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dissmissKeyboard))
+        view.addGestureRecognizer(tapGuesture)
+        
         tableView.dataSource = self
         tableView.delegate = self
         let nib = UINib(nibName: "AddDiaryTableViewCell", bundle: nil)

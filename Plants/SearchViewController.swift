@@ -21,7 +21,9 @@ class SearchViewController: UIViewController {
         textField.keyboardType = .namePhonePad
 
         // Do any additional setup after loading the view.
+        
         let tapGuesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dissmissKeyboard))
+        view.addGestureRecognizer(tapGuesture)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -23,12 +23,11 @@ class MyplantsTableViewCell: UITableViewCell {
         self.plantLavel.text = myplants.plants
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "M/d EEE"
+        formatter.dateFormat = "M月d日"
         let dateString:String = formatter.string(from: myplants.waterLastdate)
         self.waterLavel.text = "最終水やり日:" + dateString
         
 
-        print("PLANTSNAME",myplants.image)
         if let imageName = myplants.image,
             let imageURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent(imageName),
             let imageData = try? Data(contentsOf: imageURL) {

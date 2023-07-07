@@ -50,8 +50,15 @@ class AddPlantsViewController: UIViewController, UIPickerViewDataSource, UIPicke
         }
         
         //datepickerの形
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ja_JP")
+        formatter.dateFormat = "M d"
         datePicker.datePickerMode = .date
+        datePicker.locale = Locale(identifier: "ja_JP")
+        datePicker.date = Date()
         datePicker.preferredDatePickerStyle = .wheels
+        
+        
         let allPlants = realm.objects(Information.self).distinct(by: ["plants"])
         plantsArray = allPlants.compactMap({ $0.plants })
         
