@@ -427,7 +427,7 @@
 				DEVELOPMENT_TEAM = L6ZXJ7FQPU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Plants/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "カメラの使用を許可を求めます。";
+				INFOPLIST_KEY_NSCameraUsageDescription = "MyPlantsの登録、成長記録を残すためにカメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -460,7 +460,7 @@
 				DEVELOPMENT_TEAM = L6ZXJ7FQPU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Plants/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "カメラの使用を許可を求めます。";
+				INFOPLIST_KEY_NSCameraUsageDescription = "MyPlantsの登録、成長記録を残すためにカメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

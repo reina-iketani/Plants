@@ -30,11 +30,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
             notificationToken = realm.observe { [weak self] (notification, realm) in
-                
+
                 self?.generateTaskArray() // Realmデータが変更されたらtaskArrayを再生成
                 self?.tableView.reloadData() // tableViewを更新
                 self?.taskLvel.text = "今日のタスク：" + String(self?.taskArray.count ?? 0) + "件" // タスクの数を更新
+                
             }
+        
         
         // Do any additional setup after loading the view.
         tableView.dataSource = self
